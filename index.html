@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="module" src="./app.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="filters">
+        <div class="filters-inner">
+          <div class="type_search">
+            <input id="input" type="search" placeholder="search..." />
+          </div>
+          <div class="company_search">
+            <h1 class="company_list_title">Company</h1>
+            <ul id="company-list">
+              <li>All</li>
+              <li>Ikea</li>
+              <li>Marcos</li>
+              <li>Caressa</li>
+              <li>Liddy</li>
+            </ul>
+          </div>
+          <div class="price_filter">
+            <p class="price_filter_title">Price</p>
+            <div class="price_filter_inputs">
+              <input id="price-from" type="text" placeholder="from..." />
+              <input id="price-to" type="text" placeholder="to..." />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="list" class="products_list"></div>
+      <div id="error" class="error">No product ...</div>
+    </main>
+  </body>
 </html>
